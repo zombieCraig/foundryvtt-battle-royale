@@ -1,0 +1,20 @@
+_id: brRollAction0001
+name: Roll Action
+type: script
+scope: global
+img: systems/battle-royale/assets/actions/overseer.webp
+author: null
+command: |
+  // Roll the action for the selected token's player, or whoever is up now.
+  const actor =
+    canvas.tokens.controlled[0]?.actor ??
+    game.combats.find((c) => c.getFlag("battle-royale", "game"))?.combatant?.actor;
+  if (!actor) {
+    ui.notifications.warn("Select a player token, or start the game so someone is up.");
+  } else {
+    game.battleroyale.rollAction(actor);
+  }
+folder: null
+sort: 0
+flags: {}
+_key: '!macros!brRollAction0001'

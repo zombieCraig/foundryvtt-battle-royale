@@ -1,0 +1,365 @@
+_id: BRjournal0000001
+name: Battle Royale Rulebook
+img: systems/battle-royale/assets/cover.webp
+pages:
+  - _id: BRjpage000000001
+    name: Introduction
+    type: text
+    title:
+      show: true
+      level: 1
+    text:
+      format: 1
+      markdown: ''
+      content: |
+        <h2>Introduction</h2>
+        <p>This game is inspired by the 2000 Japanese cult classic of the same name (バトル ロワイヤル). In that story, high school students became rebellious, and the government enacted a law to select a class and force them to fight to the death until only one winner remained. Many spin-offs and variations of this concept have emerged since.</p>
+        <p>This game is designed for solo play. You are the overseer, a spectator watching this morbid game unfold. You start with a group of unknown participants, and after each round, you learn more about the survivors. Like many solo RPGs, this game tells a story, but it focuses more on gameplay than journaling. Players are encouraged not to add much journaling beyond the game's rules, as most participants will not last long...</p>
+        <p>This game has no specific age range or theme. Do not feel the need to use students; participants can be anyone, with any theme or no theme at all. The core premise is that a group of people wake up, are given the rules of a horrifying and deadly game, and must start immediately.</p>
+        <h2>Requirements</h2>
+        <ul>
+          <li>This document</li>
+          <li>Dice (2d6, 2d10, 1d20)</li>
+          <li>Deck of cards</li>
+          <li>Map with Grid lines (Provided)</li>
+          <li>Player roster sheet (Provided)</li>
+        </ul>
+        <h2>Player Count</h2>
+        <p>Figure out how many players you want to enter the arena. The roster supports a full deck of cards (52), but that is a large number of participants. If you play a Roll Call scenario (see "Waking Up"), playing with 52 players will take a significant amount of time. However, if you have the time, feel free to play with a full deck. Here are some starting roster recommendations:</p>
+        <ul>
+          <li><strong>Random 12</strong> (Approximately 10 minutes for setup) — Deal out one card at a time and roll up each character for up to 12 cards. Once you have dealt 12 cards, put the rest in the box. These will be your starting players. Gender can be represented by even/odd numbers or red/black suits.</li>
+          <li><strong>Face Cards Only</strong> (Approximately 10 minutes for setup) — Pull out all face cards, including the Ace. Only fill in the roster for these face cards; put the rest back in the box.</li>
+          <li><strong>Full Deck</strong> (Approximately 1 hour for setup) — Use all 52 cards. Roll up attributes for every card on the roster. This takes the longest to play out but results in a very high kill count.</li>
+        </ul>
+        <h2>Player Roster</h2>
+        <p>While many players start, their numbers typically diminish quickly. For this reason, we don't spend much time on initial character development. Instead, we quickly roll up base attributes for all characters at once. Charts in the back of this book can assist with character names, though names can be a challenge even with a name generator.</p>
+        <p><em>NOTE: Names are determined by Race/Region. These tables are not intended to cover all terms regarding race or region, but rather to provide a quick visual of what a player may look like, often utilizing your own internal biases and stereotypes. After playtesting, we found this to be the quickest and best method for creating a visual for the game's characters. Personality guides their actions. If you are uncomfortable with rolling for race/region or even name, you can simply refer to participants by the card drawn (e.g., Ace of Hearts) instead of a name.</em></p>
+        <p>Review the list below to determine which attributes you will roll for each player.</p>
+        <ul>
+          <li><strong>Gender</strong> — Recommended: Decide whether to use odd/even numbers or suit colors (red/black) to determine gender.</li>
+          <li><strong>Primary personality (1d20)</strong> — Roll 1d20 on the Personality Table. Record the personality or its corresponding number on the roster.</li>
+          <li><strong>Region (Race) (1d10 + 1d6)</strong> — On the top of the roster, determine the event's setting and write its primary region/race (e.g., Japanese). Then, select a diversity level, where 1 represents very diverse and 10 represents very homogeneous. The chosen region/race and diversity level will influence character names and add visual context to gameplay.</li>
+        </ul>
+        <table>
+          <thead><tr><th>1d6</th><th>General Region/Race</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>White / European</td></tr>
+            <tr><td>2</td><td>Black / African</td></tr>
+            <tr><td>3</td><td>Asian</td></tr>
+            <tr><td>4</td><td>Hispanic / Latino</td></tr>
+            <tr><td>5</td><td>Hawaiian / American Indian</td></tr>
+            <tr><td>6</td><td>Middle Eastern / India</td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li><strong>Age (Optional) (1d12)</strong> — If your battle royale is a mixed bag, then also roll a 1d12 on the age chart below:</li>
+        </ul>
+        <table>
+          <thead><tr><th>1d12</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr><td>1-6</td><td><strong>Young Adult</strong> 20-39</td></tr>
+            <tr><td>7-9</td><td><strong>Middle Aged</strong> 40-59</td></tr>
+            <tr><td>10</td><td><strong>Teenager</strong> 13-19</td></tr>
+            <tr><td>11</td><td><strong>Child</strong> 4-12</td></tr>
+            <tr><td>12</td><td><strong>Elderly</strong> 60+</td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li><strong>Name</strong> (Stick to just first names - 2d10) — Because there are often so many players, it's best to use a random name generator; you can find several online. If you roll the same name, add a last name for the duplicate player.</li>
+        </ul>
+        <h2>Roster Rolls</h2>
+        <p>Recommended dice rolls per player:</p>
+        <ul>
+          <li>1d10 Diversity Dice</li>
+          <li>1d20 Personality Dice</li>
+          <li>2d10 Name Dice — If the diversity dice roll equals or exceeds the diversity level, roll a 1d6 to determine a new region/race. Use the region/race name table for the player's name. If you roll the same region/race as the default region, pick another nearby region/race. Example: If the default region is Japanese and you roll Asian, pick something like Korean or Chinese for the name.</li>
+        </ul>
+        <p>Each person will also receive a backpack item, which will be rolled for once they wake up. The chosen scenario explains when they acquire their backpack.</p>
+        <h2>Finalizing the Roster</h2>
+        <h3>Resolving In Love</h3>
+        <p>Once all participants have been rolled up, resolve any players whose personality is In Love. How you resolve this is largely up to you. If two players are In Love, you can pair them. You can gather the cards for all In Love players, shuffle them, and pair them up, or select random cards from the available roster to form pairs. One-sided loves or love triangles are all perfectly legal outcomes.</p>
+        <h3>Optimizing Dice Pools</h3>
+        <p>At this point, you no longer need the initial dice pool. You will primarily use only 2d6 for the remainder of play. Keep 2d10 for the @UUID[Compendium.battle-royale.items]{Items Table}, but set them aside until needed. All other dice can be returned to the bag.</p>
+        <h3>Setting Up Initial Piles</h3>
+        <p>Take all cards used to create the Roster and place them in the "Inactive" pile. Any remaining cards can be returned to the card box. You will typically have only three decks in play: Draw, Acted, and Deceased. When playing the Roll Call scenario, first pull cards from the "Inactive" pile and place them on top of the "Draw" pile until all players have been announced. For all other scenarios (see "Waking Up" below), shuffle the cards and place them directly into the "Draw" pile, as all participants will start as Active in Round 1.</p>
+        <h2>Waking Up</h2>
+        <p>All the "contestants" have been drugged. They wake up groggy and confused. Look at the chart below and pick a scenario that you find most interesting or roll for a random scenario. These scenarios determine the starting location of the players.</p>
+        <table>
+          <thead><tr><th>Roll</th><th>Location</th><th>Dispersal Method</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Abandoned Room</td><td>Roll Call</td><td>They wake up, surrounded by armed guards. A projection flickers alive which tells them the rules. One by one a name is called and a soldier tosses them a backpack and they must leave immediately.</td></tr>
+            <tr><td>2</td><td>Scattered</td><td>Dispersed</td><td>People wake up scattered through land and buildings. Confused, they find a backpack with instructions inside. A siren can be heard alerting the players to the game starting immediately.</td></tr>
+            <tr><td>3</td><td>Air Drop</td><td>Dispersed</td><td>They wake up on a plane. A commander announces the rules and one by one grabs a person, hands them a backpack and tosses them out the open door.</td></tr>
+            <tr><td>4</td><td>The Platform</td><td>Centralized</td><td>They wake to the rush of wind as they are all on a platform rising from the ground. The sky can be seen above them. An announcement alerts them to the game starting. As they reach the top they can see scattered bags in a circle around them. A siren blares and the game starts.</td></tr>
+            <tr><td>5</td><td>Prison</td><td>Roll Call</td><td>Each person awakes in their own small cell with a metal door and no windows. An intercom crackles to life and explains the rules. One by one a cell door opens at random and as the person leaves a backpack drops from a chute.</td></tr>
+            <tr><td>6</td><td>Stadium</td><td>Centralized</td><td>A giant metal door clangs open to reveal a brightly lit stadium. The stands are replaced by giant screens showing cheering crowds. In front of them are burned out cars and barrels with a pile of backpacks. A large exit gate is on the other side. A buzzer sounds and everyone runs towards the backpacks.</td></tr>
+          </tbody>
+        </table>
+        <p>All players wear a metal collar around their neck, equipped with a small explosive. This explosive will detonate, killing them, if they violate any rules or if the overseers choose to activate it. Any attempt to remove the device will also cause it to explode. Contestants are watched and tracked at all times.</p>
+        <p>The Dispersal Method determines the initial placement of the players.</p>
+        <ul>
+          <li><strong>Roll Call</strong> — Players begin at a single, predetermined location on the map. Choose this location randomly or select it. Select a playing card for each participant as they are released. You will play a round for the active players each time one is released, but the map's round counter does not increment until all participants have been released. For example, after a participant is released, you play all active participants, including the newly released one. Once a round is completed, shuffle them back into the Draw deck and release another participant. Only after all participants have been moved to the Draw deck do the map rounds begin to increment.</li>
+          <li><strong>Centralized</strong> — Players begin at a single, predetermined location on the map. Choose this location randomly or select it. All participants start simultaneously in this scenario. All participants are shuffled and placed directly into the Draw deck.</li>
+          <li><strong>Dispersed</strong> — For each participant, you will roll randomly to determine their starting location on the map. If a roll would place a participant in a lethal location (e.g., the ocean), you may consider them dead. Alternatively, if that seems unfair, you can re-roll or place them in the nearest safe location. After placing a participant, roll for their starting backpack item from the @UUID[Compendium.battle-royale.items]{Items Table}.</li>
+        </ul>
+        <p>When a participant acquires their backpack, roll for their item on the @UUID[Compendium.battle-royale.items]{Items Table}.</p>
+    sort: 100000
+    flags: {}
+    _key: '!journal.pages!BRjournal0000001.BRjpage000000001'
+  - _id: BRjpage000000002
+    name: Playing the Game
+    type: text
+    title:
+      show: true
+      level: 1
+    text:
+      format: 1
+      markdown: ''
+      content: |
+        <h2>Playing the Game</h2>
+        <p>A play round occurs for all active players. Active players are defined as those who have officially started (e.g., if in the Roll Call scenario) and are not dead.</p>
+        <p>Gather the player cards for all active players, shuffle them, and then place them in the Draw pile. Draw a card, place it in the Acted pile, and then determine the player's action based on their personality. The actions a player can take are listed below. If a player rolls an action they cannot take, or if it's a blank roll, they do nothing of value this turn. They might be arguing with each other, frozen in fear, or contemplating their next move.</p>
+        <table>
+          <thead><tr><th>Action</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>Move</td><td>Move to another map grid space</td></tr>
+            <tr><td>Comfort</td><td>Can heal an injury</td></tr>
+            <tr><td>Hide</td><td>Can change state to hidden</td></tr>
+            <tr><td>Search</td><td>Can find items or people</td></tr>
+            <tr><td>Attack</td><td>Attacks another person</td></tr>
+            <tr><td>Convince</td><td>Convince a person to join, leave or trade</td></tr>
+            <tr><td>Abandon</td><td>Leave a group</td></tr>
+            <tr><td>Mimic</td><td>Does an action of another player</td></tr>
+            <tr><td>Overseer</td><td>You decide</td></tr>
+          </tbody>
+        </table>
+        <p>Each personality has an action that a player takes after a 1d6 roll.</p>
+        <p>Once a player has finished their action, draw the next player from the Draw Deck and place them on top of the last player in the Acted Deck. Perform the actions for this new player as before. If you draw a dead player, place them in the Deceased Pile. When a player is placed in the Deceased Pile, their death is announced to all remaining survivors.</p>
+        <h3>Eliminating Players</h3>
+        <p>Players can die in many different ways: by staying in a warning zone too long after it becomes lethal, from an environmental hazard, or, of course, through other players' actions. If a player is the active player at the time of their death, immediately place them in the Deceased Pile. If they are not the active player, when they are drawn again, place them in the Deceased Pile. It is common for players to die who are not actively drawn but happen to be in the wrong place at the wrong time.</p>
+        <p>Immediately whenever a player dies, whether active or not, cross them off the roster.</p>
+        <h3>Action Success</h3>
+        <p>To perform an action, a player must pass a success roll. Success rolls use a 1d6 die. To get a success, a player must roll a 4 or more. The player rolls and adds or subtracts based on any items or injuries that may affect their roll.</p>
+        <p>If the action involves another player, you also roll for them. The highest roll wins. If there are no other players to perform the action on, they do nothing. A tie does nothing.</p>
+        <h3>Teams</h3>
+        <p>When a player convinces another player to join them, a team is created. Assign a number to represent the team for both players. For instance, if this is the first team, assign '1' to both of their team slots. If one of the players is already on a team, they will either join the larger team, or be convinced to leave their existing team to form a new one. This can be determined by the convincing player or by what makes sense for their personality type.</p>
+        <p>When one person from a team successfully moves, all other players in that team move with them. You will only roll once for the event encounter when the team moves into a new space.</p>
+        <h3>Move Rules</h3>
+        <p>Movement involves traversing terrain, which could be exploring, wandering, or fleeing an area. First, determine their destination. Players will never move into an area that is already destroyed or marked for destruction. You can choose a logical path for them or roll 2d6. A successful roll (4 or more) means they reach their intended area.</p>
+        <p>If the player cannot move into the rolled space, they must move clockwise until an available space is found.</p>
+        <p>Once a player successfully moves into a new area, they must roll on the Event Chart. If a player was hidden, after a successful move they are no longer hidden.</p>
+        <table>
+          <thead><tr><th>2d6</th><th>Direction</th></tr></thead>
+          <tbody>
+            <tr><td>2</td><td>North West</td></tr>
+            <tr><td>3-4</td><td>North East</td></tr>
+            <tr><td>5</td><td>North</td></tr>
+            <tr><td>6</td><td>South</td></tr>
+            <tr><td>7</td><td>East</td></tr>
+            <tr><td>8</td><td>West</td></tr>
+            <tr><td>9-11</td><td>South West</td></tr>
+            <tr><td>12</td><td>South East</td></tr>
+          </tbody>
+        </table>
+        <h3>Comfort Rules</h3>
+        <p>Comforting helps players recover from injuries, whether mental or physical. Both players roll; if the comforting player achieves a higher roll, the action succeeds. The injured player finds a way to overcome their problems. This action can only heal one injury at a time.</p>
+        <p>A player can also comfort themselves. In this instance, they must achieve a standard success roll of 4 or more, modified by any relevant equipment or other factors.</p>
+        <p>If no one in their space is injured, the comforting player may attempt to talk to others to make sense of the situation (4+). On a successful roll, they gain a +1 bonus on their next turn's chosen action.</p>
+        <p><strong>Priority order:</strong></p>
+        <ol>
+          <li>Comfort an injured player in the same space</li>
+          <li>If alone or no one is injured: comfort self (heal own injury, roll 4+)</li>
+          <li>If no injuries at all: talk to others for morale (+1 bonus next turn, roll 4+)</li>
+        </ol>
+        <h3>Hide Rules</h3>
+        <p>A player can attempt to hide, even in an area with other players. They must roll, and if successful, they find a suitable hiding spot. If discovered, everyone in that area becomes aware of their presence, and they cannot hide again in that same area.</p>
+        <p>If a player is in hiding and rolls another action, their hiding state does not change unless they successfully move to a new area, at which point they are no longer hidden.</p>
+        <p>If the hidden player instigates an attack, either through a Personality roll or an event (Hostility), they receive a +1 bonus from being protected by cover. They lose the benefit of hiding after the attack, even if the attack was not successful.</p>
+        <p>A hidden player cannot be targeted by any action (Attack, Convince, Comfort) unless they are first discovered through a Search action. If a player's only available targets are hidden, treat the action as if no valid targets are present.</p>
+        <h3>Search Rules</h3>
+        <p>A player may search an area. If another player is hiding in the same area, the searching player must roll against the hidden player to see if they are located first. If a hidden player is discovered, the search action stops, and the discovered player is no longer hidden. If no person is found, the searching player then rolls to find items. On a successful roll, consult the @UUID[Compendium.battle-royale.items]{Items Table}.</p>
+        <p>When a player performs a successful Search and finds an item, they compare it to their currently held item. If the found item is not an upgrade, they leave it and keep their current item. A player with no item always picks up whatever they find.</p>
+        <p><strong>Upgrade criteria:</strong></p>
+        <ul>
+          <li>An Attack item always beats a non-Attack item</li>
+          <li>Between two Attack items, higher modifier wins (ties broken by special properties: multi-target, area-affect, or scoped count as +1)</li>
+          <li>Between two non-Attack items, higher modifier wins</li>
+        </ul>
+        <h3>Attack Rules</h3>
+        <p>When a player attacks another, their intent is to kill them. If there is no one to attack, the player spends their turn searching the area for someone but finds no one, and thus does not move. If there are multiple people in the area, first separate them into two groups: those allied with the attacking player and those who are not. The attacking player will only target those in the opposing group. If there are no opposing targets (all players in the area are allies), the attack fails — the player finds no one to fight. To determine which individual in the target group is attacked, either shuffle their cards into a small deck and draw one, or assign each a temporary random number and roll a die.</p>
+        <p>See <em>Combat</em> for complete attack rules.</p>
+        <h3>Convince Rules</h3>
+        <p>A player can convince another player to leave or become part of their team. The target must be visible and not hidden. Whenever a player attempts to convince another, they must achieve a higher roll than their target. If successful, the target will either join their team (perhaps begrudgingly) or comply with their instructions. The Overseer determines the specific action the convinced player takes, which could include trading weapons or moving to a different space. If a player is convinced to move to another space, it cannot be one that has already been eliminated; however, the person entering the new space will still have to roll on the Event Chart.</p>
+        <p>It is also possible to convince a player from one team to join another. If there is no one to convince, the player spends their turn searching the area for someone and does not move.</p>
+        <p><em>NOTE: If a player attempts to Convince but there are no valid targets in their cell, they Search the area instead. Resolve the Search action normally.</em></p>
+        <h3>Abandon</h3>
+        <p>If a player is a member of a team, they secretly leave it. They will no longer follow their former leader or other team members until convinced otherwise. If a player rolls Abandon and other players are at their location, treat this as a Move action. If they are alone, they will stay put.</p>
+        <h3>Mimic Rules</h3>
+        <p>Mimics perform actions based on those around them. If a Mimic action specifies another person, they will only replicate that specific person's action. They do not roll on the personality chart; instead, they perform the exact action of their target. For example, if their target attacked, the Mimic attacks. If no one is around, or if their target has not yet acted, the Mimic does nothing. If it is impossible to copy their target's action, they also do nothing. If a Mimic is alone in a warning zone, there is a 50% chance (4+) they will perform a Move action to leave the zone.</p>
+        <p>If a player attempts to Convince a Mimic, they will automatically succeed. Mimics can never (successfully) convince anyone else to do anything.</p>
+        <h3>Overseer Rules</h3>
+        <p>When an Overseer action is drawn, the Overseer should pause to consider the player's situation before choosing an action. This is a two-step process: first the action is revealed, then the Overseer selects from the available actions. Consider what the player might logically do, or what might create an interesting narrative. If you prefer not to make a decision, you may use the random table below.</p>
+        <table>
+          <thead><tr><th>1d6</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Comfort</td></tr>
+            <tr><td>2</td><td>Convince</td></tr>
+            <tr><td>3</td><td>Hide</td></tr>
+            <tr><td>4</td><td>Search</td></tr>
+            <tr><td>5</td><td>Attack</td></tr>
+            <tr><td>6</td><td>Move</td></tr>
+          </tbody>
+        </table>
+        <h3>In Love</h3>
+        <p><strong>Priority of Actions</strong></p>
+        <p>Players with the personality trait of 'In Love' focus solely on the player they love. Their actions are:</p>
+        <ul>
+          <li>Find Lover</li>
+          <li>Defend Lover</li>
+          <li>Comfort Lover (if injured)</li>
+          <li>Move</li>
+        </ul>
+        <p>Actions are prioritized in that order. If the loved player is not yet active (e.g., in the Roll Call scenario), the 'In Love' player will move in a random direction.</p>
+        <p><strong>Finding Their Love</strong></p>
+        <p>If the lovers have not met in the playing field, they both move randomly. The In Love player does not know their lover's location — they perform a standard Move action (roll 2d6 for direction) while searching for their lover. Once they meet, they will follow each other. If one successfully moves to a new location, the other will automatically move with them. You will only roll on the Event Chart once for the pair. They automatically form their own team. If either player is already part of another team, both lovers will join that team.</p>
+        <p>Once they have found each other, all rolls receive a +1 bonus.</p>
+        <p><strong>When a Love Dies</strong></p>
+        <p>If their loved one dies for any reason, roll on the Personality Traits table again. All Move actions become Attack actions, unless there are no potential victims in their space (in which case they revert to Move actions). Any teams they were part of are ignored. The player falls into an insatiable rage.</p>
+        <p><em>NOTE: The player will only adopt this rampage personality once they become aware of their loved one's death. This occurs after the death is announced (when the dead player's card is drawn).</em></p>
+        <p><strong>One-Way Love</strong></p>
+        <p>If the love is one-way (meaning the player is in love with another who does not reciprocate), the 'In Love' player still operates in the same manner. However, they will not leave their loved one's side once they find them. This means that if the loved one leaves the area, the 'In Love' player will follow. Conversely, when it is the 'In Love' player's turn, they will not voluntarily move out of that space.</p>
+        <h3>End of Round</h3>
+        <p>Once everyone has acted, the round is over. If all players have entered the arena (e.g., in a Roll Call session), then mark off the round marker on the map. Whenever you reach a round marker with a warning icon above it, a block of areas will be announced as warning zones. The map will become smaller and smaller. For each round, mark the outermost regions as soon-to-be hazard zones. For example, Rows A and J, and Columns 1 and 10 for the first warning round. Three rounds later, at the end of that round, a skull marker will indicate that all previously marked areas have become lethal. Any player still in those regions will be eliminated instantly.</p>
+        <p>At the beginning of the next round, the next outer ring will be marked as a warning zone (e.g., Rows B and I, and Columns 2 and 9).</p>
+        <p>Players cannot move into an area that is marked as a warning zone or has already been eliminated. If a player rolls an area they cannot enter, they will select the next available space clockwise from the rolled location. The last area will never be marked for termination.</p>
+        <h4>Final Team</h4>
+        <p>Sometimes, only a final team remains. This can be a pair of lovers or a group formed in the arena. When the arena is down to just one team, the real hard decisions are made.</p>
+        <h4>3 or more people in the final team</h4>
+        <p>When there are three or more people on a team, the first person from that team drawn for the round must choose one person they wish to save. If there is someone who logically makes sense for this person to choose, that is the one they pick. Otherwise, randomly select someone else (draw another card). This choice will fragment the team into two teams. The game continues with this new dynamic.</p>
+        <p>After selecting the chosen person to save, they then perform their personality action (move).</p>
+        <h4>Final 2 same team</h4>
+        <p>If only two players remain and they are on the same team, the game takes a serious and immediate turn. If the final two are lovers, first roll on the Personality Table to determine their original personality. Roll on the below Final Reckoning table:</p>
+        <table>
+          <thead><tr><th>2d6</th><th>Scenario</th><th>Description</th><th>Skill Bonus</th></tr></thead>
+          <tbody>
+            <tr><td>2</td><td>Final Secret</td><td>The way out is revealed but it is hidden. The first to find it will be saved and the other will be trapped and executed.</td><td>Search</td></tr>
+            <tr><td>3</td><td>Potent Key</td><td>The exit key is revealed, however, whoever grabs the key will be poisoned by the environment and will die. A player must convince the other player to fetch the key for them. If they fail then they will do it instead.</td><td>Convince</td></tr>
+            <tr><td>4</td><td>Paranoia</td><td>Consumed with paranoia the other attacks them. Can they hide long enough to strike from behind or will they get caught?</td><td>Hide</td></tr>
+            <tr><td>5</td><td>Last Breath</td><td>The partner collapses and is near death. They will try to save them. However, in order to save them they will have to sacrifice the last of their own resources.</td><td>Comfort</td></tr>
+            <tr><td>6</td><td>Last Stand-off</td><td>The collars start beeping quicker and quicker; if they don't act immediately, they will both explode. They immediately attack each other.</td><td>Attack + Kill Count</td></tr>
+            <tr><td>7</td><td>The Race</td><td>Both see the look in each other's eyes as they both consider the same thing. Run into the lethal zone before the other can in order to save them.</td><td>Move</td></tr>
+            <tr><td>8</td><td>Environmental Impact</td><td>A hazardous environment begins to destroy the area around them. They must run to evade it but only one will be quick enough.</td><td>Move</td></tr>
+            <tr><td>9</td><td>Sudden Brutality</td><td>The urge to survive overwhelms them and they immediately brutally attack the other person.</td><td>Attack + Kill Count</td></tr>
+            <tr><td>10</td><td>Guilt Trip</td><td>They try to convince the other partner to give up and let them win. If they cannot convince their partner to end it then they will allow their partner to kill them instead.</td><td>Convince</td></tr>
+            <tr><td>11</td><td>Rescue</td><td>The partner becomes trapped and if not immediately saved will die. They desperately try to save them but in order to save them they will have to sacrifice themselves.</td><td>Comfort</td></tr>
+            <tr><td>12</td><td>Swarm</td><td>A swarm of creatures has come to hunt down the remaining players. Once only one is left the creatures will be called back. This will come down to who can hide the best.</td><td>Hide</td></tr>
+          </tbody>
+        </table>
+        <p>The winner of the final scenario is determined by a dice roll for each player. Players add a +1 for each Skill bonus associated with their personality type. If the scenario's Skill bonus is Attack, item modifiers and bonuses for the player's kill count are also added. A player with the 'Thinking' personality type receives a +1 bonus regardless of the Skill bonus type. In the event of a tie, neither player survives.</p>
+        <blockquote>
+          <p><strong>Example:</strong> Final Scenario: Paranoia<br>A Silent player attacks an Anxious player.</p>
+          <p>The Silent player has 1 Hide (+1). Attack is not included as it is not listed as a Skill Bonus for this scenario.<br>The Anxious player has 2 Hide (+2).</p>
+          <p>Silent rolls 4 + 1 = 5, and the Anxious player rolls 5 + 2 = 7.</p>
+          <p>The Anxious player successfully hides long enough to gain the advantage, sneaking up behind the Silent player to deliver the final blow.</p>
+        </blockquote>
+        <h4>The final day</h4>
+        <p>If more than one player remains at the end of the final day, each person's collar will begin to beep. The beeping will occur consecutively, alternating between the remaining players and increasing in speed. Shuffle the cards of the remaining players and place the deck face down on the table. Reveal the top card. That player is eliminated as their head explodes. The beeping pauses for a few seconds, then the pattern resumes. Draw the next card, and that player's head explodes. This process repeats until only one player remains. At this point, the beeping ceases, replaced by a faint digital trumpet sound, signifying their victory.</p>
+        <p><strong>Summary of actions:</strong></p>
+        <ol>
+          <li>At the end of the final day, if more than one player remains, the final reckoning begins.</li>
+          <li>Shuffle the cards of all remaining players into a single deck.</li>
+          <li>Draw the top card. That player is eliminated.</li>
+          <li>Repeat this process until only one card remains. This player is the winner.</li>
+        </ol>
+        <h3>Game Ends</h3>
+        <p>The game ends when there are 0 or 1 players left. The Overseers do not actually care if anyone survives. The survivor is always mentally scarred and a mess for the rest of their lives. There are no winners, only a spectacle and a story.</p>
+    sort: 200000
+    flags: {}
+    _key: '!journal.pages!BRjournal0000001.BRjpage000000002'
+  - _id: BRjpage000000003
+    name: Conflict & Consequences
+    type: text
+    title:
+      show: true
+      level: 1
+    text:
+      format: 1
+      markdown: ''
+      content: |
+        <h2>Combat</h2>
+        <p>Combat functions similarly to other actions. Once a target has been identified (see <em>Playing the Game</em>), both participants roll, adding any item modifications to their respective rolls. Note that there is only an 'Attack' action and no 'Defend' action; this is because a defender, once attacked, retaliates with the same lethal intent as the original attacker.</p>
+        <p>The participant with the highest roll (after modifications) wins the combat. If a participant does not have a weapon, their attack suffers a -1 penalty. Any item that could reasonably cause harm in a fight is considered a weapon and negates this -1 unarmed penalty. Items that grant an 'Attack +X' bonus are always considered weapons. The loser's fate must then be determined. Roll on the table below to ascertain the extent of the damage. In the event of a tie, no one is hurt.</p>
+        <table>
+          <thead><tr><th>1d6</th><th>Damage Result</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>The victim was injured but it could have been worse. Roll on the Injury Table with a -2</td></tr>
+            <tr><td>2</td><td>The victim was injured. Roll on the Injury Table</td></tr>
+            <tr><td>3</td><td>The victim barely survived the assault. Roll on the Injury Table with a +2</td></tr>
+            <tr><td>4-6</td><td>The victim is murdered. Cross them off the roster.</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Teammate Assistance:</strong> When a player is in combat (attacking or defending), each alive teammate in the same cell provides a +1 bonus to both their attack and defense rolls, up to a maximum of +2.</p>
+        <blockquote><p>Example: Player A attacks Player B. Player A has one teammate in the same cell, gaining +1 to attack. Player B has two teammates in the same cell, gaining +2 to defense.</p></blockquote>
+        <p>When a person is killed, the killer may choose to loot the body and exchange inventory items. This is decided by the Overseer. If it makes sense for the killer, the Overseer moves the inventory to the killer's possession; otherwise, the item is considered lost and cannot be retrieved. The Overseer should consider the player's personality; for example, an Aggressive person might always take the stronger weapon, while a Humanitarian might exchange it for a first aid kit.</p>
+        <h3>Multi-Attack</h3>
+        <p>Some weapons have a multi-attack attribute. A weapon with a multi-attack attribute allows the wielder to hit up to 3 people in the same area. This is an aimed attack and will not hit allies. The attacker must still determine the main target, as only that target's roll can harm the attacker.</p>
+        <p>Resolve the attack against the first target before the other two. If the first target defeats the attacker, the other two targets do not need to make rolls, as the attacker is already defeated. If the first target fails, however, the other two can only attempt to dodge the attack and will not be able to harm the attacker.</p>
+        <h3>Area Affect</h3>
+        <p>When a player carrying an Area Affect item rolls to attack, they will use it if there are other players in the same space. If not, treat it as a move instead. For an Area Affect attack, the attacker rolls one 6-sided die. This roll determines the number others must match or exceed to evade the attack. Thus, an attacker's roll of 1 is a dud and affects no one in the space.</p>
+        <p>If the effect of an Area Affect is a modifier (such as -2), it will only last for the target's next turn. If it results in an injury, that injury can, of course, have long-lasting effects, including death.</p>
+        <h3>Desperation</h3>
+        <p>As the game progresses, the overseers increase the stakes and combat becomes more lethal in later rounds.</p>
+        <ul>
+          <li>Rounds 1–15: Normal rules. Damage roll of 4+ on d6 = death.</li>
+          <li>Rounds 16–20: Damage rolls get +1. Injuries are more likely to be fatal.</li>
+          <li>Rounds 21–25: Damage rolls get +2. Action success threshold drops to 3+ (usually 4+). Nearly all injuries are fatal.</li>
+          <li>Rounds 26+: Damage rolls get +3. All damage is lethal. Any hit kills.</li>
+        </ul>
+        <h3>Overseer's Decree - Showdown</h3>
+        <p>When the number of living players drops to 5 or fewer, the Overseers declare a Showdown:</p>
+        <ol>
+          <li><strong>Zone Freeze:</strong> Zone progression halts. No more zones advance to Warning or Lethal.</li>
+          <li><strong>Forced Combat:</strong> All non-combat actions (Move, Hide, Search, Comfort) are replaced with Attack. Players must fight.</li>
+          <li><strong>Desperation Plea:</strong> Convince actions become a Desperation Plea — a lethal social attack. Roll opposed; if the Convince player wins, the target dies (instead of joining their team).</li>
+          <li><strong>Collar Failsafe:</strong> If an entire round passes with zero deaths during the Showdown, the Overseers detonate one random player's collar at end of round.</li>
+          <li><strong>Final Scenario at 2:</strong> When exactly 2 players remain during a Showdown, the Final Scenario triggers immediately regardless of team membership.</li>
+        </ol>
+        <h3>Overseer's Impatience</h3>
+        <p>After 2 deathless rounds following the decree (5 or fewer players), the Overseer becomes impatient. They will issue a warning to the players and starting the following round, a random player's collar will explode.</p>
+        <table>
+          <thead><tr><th>Consecutive Deathless Rounds</th><th>Response</th></tr></thead>
+          <tbody>
+            <tr><td>≤2</td><td>Nothing</td></tr>
+            <tr><td>3</td><td>Warning to the players</td></tr>
+            <tr><td>4+</td><td>Collar Detonation: A player is selected at random and their head explodes.</td></tr>
+          </tbody>
+        </table>
+        <p>The counter resets to 0 whenever any death occurs (combat, zone, hazard, or collar). When Showdown has initiated, the overseer will no longer initiate a countdown and will allow the showdown to conclude on its own.</p>
+        <h3>Injury Table</h3>
+        <table>
+          <thead><tr><th>1d10</th><th>Injury</th><th>Affect</th></tr></thead>
+          <tbody>
+            <tr><td>&lt;1</td><td>Flesh Wound</td><td>None</td></tr>
+            <tr><td>1</td><td>Sprained Ankle</td><td>Move -1</td></tr>
+            <tr><td>2</td><td>Head Injury</td><td>Hide -1, Search -1</td></tr>
+            <tr><td>3</td><td>Bloodied Arm</td><td>Attack -1</td></tr>
+            <tr><td>4</td><td>Mangled Calf</td><td>Move -2</td></tr>
+            <tr><td>5</td><td>Severed Finger</td><td>Attack -1</td></tr>
+            <tr><td>6</td><td>Damaged Eye</td><td>Search -2</td></tr>
+            <tr><td>7</td><td>Burned</td><td>Hide -2, Attack -1</td></tr>
+            <tr><td>8</td><td>Broken Bone</td><td>Attack -2</td></tr>
+            <tr><td>9</td><td>Severed Limb</td><td>Attack -3, Move -2</td></tr>
+            <tr><td>10</td><td>Bleeding Out</td><td>Attack -3, Move -4</td></tr>
+            <tr><td>&gt;10</td><td>Dismembered</td><td>Dead</td></tr>
+          </tbody>
+        </table>
+        <h3>Death</h3>
+        <p>When someone is killed, cross them off the roster and add a kill tick to the murderer. The next time their card is drawn, place it in the deceased pile, and their name is announced as dead to the rest of the survivors.</p>
+    sort: 300000
+    flags: {}
+    _key: '!journal.pages!BRjournal0000001.BRjpage000000003'
+folder: null
+sort: 0
+flags: {}
+categories: []
+_key: '!journal!BRjournal0000001'

@@ -1,0 +1,14 @@
+_id: brNextRound00001
+name: Next Round
+type: script
+scope: global
+img: systems/battle-royale/assets/icon.webp
+author: null
+command: |
+  // Advance the Battle Royale round: updates the zone overlay on the island
+  // map and announces warnings / lethal zones / escalation in chat.
+  game.battleroyale.nextRound();
+folder: null
+sort: 0
+flags: {}
+_key: '!macros!brNextRound00001'

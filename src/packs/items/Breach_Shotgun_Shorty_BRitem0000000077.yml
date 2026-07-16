@@ -1,0 +1,24 @@
+_id: BRitem0000000077
+name: Breach Shotgun (Shorty)
+type: item
+img: icons/svg/sword.svg
+system:
+  rollNumber: 77
+  weapon: true
+  mods:
+    attack: 1
+    move: 0
+    hide: 0
+    search: 0
+    comfort: 0
+    convince: 0
+  multiTarget: true
+  areaAffect: false
+  scoped: false
+  loseOnFailure: false
+  special: ''
+effects: []
+folder: null
+sort: 7700
+flags: {}
+_key: '!items!BRitem0000000077'

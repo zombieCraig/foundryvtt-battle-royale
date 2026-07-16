@@ -1,0 +1,50 @@
+<div class="br-item-sheet">
+  <header class="br-card-header">
+    <img class="br-card-img" src="{{item.img}}" alt="{{item.name}}" />
+    <input type="text" name="name" value="{{item.name}}" />
+  </header>
+
+  <div class="form-group">
+    <label>{{localize "BR.Items.RollNumber"}}</label>
+    <input
+      type="number"
+      name="system.rollNumber"
+      value="{{system.rollNumber}}"
+      min="1"
+      max="100"
+      step="1"
+    />
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "BR.Items.WeaponLabel"}}</label>
+    <input type="checkbox" name="system.weapon" {{checked system.weapon}} />
+  </div>
+
+  {{#each mods}}
+    <div class="form-group">
+      <label>{{this.label}}</label>
+      <input type="number" name="system.mods.{{this.id}}" value="{{this.value}}" step="1" />
+    </div>
+  {{/each}}
+
+  <div class="form-group">
+    <label>{{localize "BR.Items.MultiTarget"}}</label>
+    <input type="checkbox" name="system.multiTarget" {{checked system.multiTarget}} />
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "BR.Items.AreaAffect"}}</label>
+    <input type="checkbox" name="system.areaAffect" {{checked system.areaAffect}} />
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "BR.Items.Scoped"}}</label>
+    <input type="checkbox" name="system.scoped" {{checked system.scoped}} />
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "BR.Items.Special"}}</label>
+    <input type="text" name="system.special" value="{{system.special}}" />
+  </div>
+</div>

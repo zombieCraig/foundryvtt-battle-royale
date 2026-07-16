@@ -1,0 +1,14 @@
+_id: brGameSetup00001
+name: Game Setup
+type: script
+scope: global
+img: systems/battle-royale/assets/icon.webp
+author: null
+command: |
+  // Run the Battle Royale initial game setup: roster questions, player
+  // creation, and the Waking Up scene roll. Re-run to reset the field.
+  game.battleroyale.setup();
+folder: null
+sort: 0
+flags: {}
+_key: '!macros!brGameSetup00001'

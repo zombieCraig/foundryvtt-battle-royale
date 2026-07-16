@@ -1,0 +1,210 @@
+<div class="br-player">
+  <header class="br-hero">
+    <div class="br-hero-portrait">
+      {{#if isGM}}
+        <img
+          class="br-hero-img"
+          src="{{actor.img}}"
+          alt="{{cardName}}"
+          data-edit="img"
+          data-action="editImage"
+          data-tooltip="{{localize 'BR.Sheet.EditPortrait'}}"
+        />
+      {{else}}
+        <img class="br-hero-img" src="{{actor.img}}" alt="{{cardName}}" />
+      {{/if}}
+      <img
+        class="br-hero-card"
+        src="{{cardImg}}"
+        alt="{{cardName}}"
+        data-tooltip="{{cardName}}"
+      />
+    </div>
+    <div class="br-hero-identity">
+      <h2 class="br-card-name">{{cardName}}</h2>
+      {{#if system.personality}}<span class="br-hero-sub">{{system.personality}}</span>{{/if}}
+    </div>
+    {{#if isGM}}
+      <button
+        type="button"
+        class="br-roll-action"
+        data-action="rollAction"
+        data-tooltip="{{localize 'BR.Actions.RollAction'}}"
+        aria-label="{{localize 'BR.Actions.RollAction'}}"
+      >
+        <i class="fa-solid fa-dice"></i>
+      </button>
+    {{/if}}
+  </header>
+
+  <div class="br-status-badges">
+    {{#if isGM}}
+      <label class="br-badge br-badge-dead" data-tooltip="{{localize 'BR.Sheet.Dead'}}">
+        <input type="checkbox" name="system.dead" {{checked system.dead}} />
+        <span>💀</span>
+      </label>
+      <label class="br-badge br-badge-hidden" data-tooltip="{{localize 'BR.Sheet.Hidden'}}">
+        <input type="checkbox" name="system.hidden" {{checked system.hidden}} />
+        <span>🫥</span>
+      </label>
+      <label class="br-badge br-badge-enraged" data-tooltip="{{localize 'BR.Sheet.Enraged'}}">
+        <input type="checkbox" name="system.enraged" {{checked system.enraged}} />
+        <span>😡</span>
+      </label>
+      <label class="br-badge br-badge-morale" data-tooltip="{{localize 'BR.Sheet.Morale'}}">
+        <input type="checkbox" name="system.morale" {{checked system.morale}} />
+        <span>✨</span>
+      </label>
+    {{else}}
+      <span
+        class="br-badge br-badge-dead {{#if system.dead}}is-active{{/if}}"
+        data-tooltip="{{localize 'BR.Sheet.Dead'}}"
+      ><span>💀</span></span>
+      <span
+        class="br-badge br-badge-hidden {{#if system.hidden}}is-active{{/if}}"
+        data-tooltip="{{localize 'BR.Sheet.Hidden'}}"
+      ><span>🫥</span></span>
+      <span
+        class="br-badge br-badge-enraged {{#if system.enraged}}is-active{{/if}}"
+        data-tooltip="{{localize 'BR.Sheet.Enraged'}}"
+      ><span>😡</span></span>
+      <span
+        class="br-badge br-badge-morale {{#if system.morale}}is-active{{/if}}"
+        data-tooltip="{{localize 'BR.Sheet.Morale'}}"
+      ><span>✨</span></span>
+    {{/if}}
+
+    <div class="br-stat-kills" data-tooltip="{{localize 'BR.Sheet.Kills'}}">
+      <span class="br-stat-icon">⚔</span>
+      {{#if isGM}}
+        <input type="number" name="system.kills" value="{{system.kills}}" min="0" step="1" />
+      {{else}}
+        <span class="br-stat-value">{{system.kills}}</span>
+      {{/if}}
+    </div>
+  </div>
+
+  <section class="br-section br-section-card">
+    <h3 class="br-section-title">{{localize "BR.Sheet.SectionCard"}}</h3>
+    <div class="form-group">
+      <label>{{localize "BR.Sheet.Gender"}}</label>
+      <input type="text" name="system.gender" value="{{system.gender}}" />
+    </div>
+    <div class="form-group">
+      <label>{{localize "BR.Sheet.Region"}}</label>
+      <input type="text" name="system.region" value="{{system.region}}" />
+    </div>
+  </section>
+
+  <section class="br-section">
+    <div class="form-group">
+      <label>{{localize "BR.Sheet.Personality"}}</label>
+      <select name="system.personality">
+        <option value=""></option>
+        {{selectOptions personalities selected=system.personality}}
+      </select>
+    </div>
+    <div class="form-group">
+      <label>{{localize "BR.Sheet.Location"}}</label>
+      <input type="text" name="system.location" value="{{system.location}}" />
+    </div>
+    <p class="br-hint">{{localize "BR.Sheet.LocationHint"}}</p>
+    <div class="form-group">
+      <label>{{localize "BR.Sheet.Team"}}</label>
+      <input type="text" name="system.team" value="{{system.team}}" />
+    </div>
+  </section>
+
+  <section class="br-section">
+    <h3 class="br-section-title">{{localize "BR.Sheet.Lover"}}</h3>
+    {{#if isGM}}
+      <div class="form-group">
+        <label>{{localize "BR.Sheet.Lover"}}</label>
+        <select name="system.lover">
+          <option value=""></option>
+          {{selectOptions lovers selected=system.lover}}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>{{localize "BR.Sheet.LoverFound"}}</label>
+        <input type="checkbox" name="system.loverFound" {{checked system.loverFound}} />
+        {{#if loverDead}}<span class="br-lover-dead">💀
+            {{localize "BR.Sheet.LoverDeadHint"}}</span>{{/if}}
+      </div>
+    {{else}}
+      <p class="br-lover-status">{{loverStatusText}}</p>
+    {{/if}}
+  </section>
+
+  <section class="br-section">
+    <h3 class="br-section-title">{{localize "BR.Sheet.Item"}}</h3>
+    <div class="br-item-card">
+      {{#if item}}
+        <img src="{{item.img}}" alt="{{item.name}}" />
+        <span>{{item.name}} <em>({{item.affects}})</em></span>
+        {{#if isGM}}
+          <button
+            type="button"
+            data-action="removeItem"
+            data-tooltip="{{localize 'BR.Sheet.RemoveItem'}}"
+            aria-label="{{localize 'BR.Sheet.RemoveItem'}}"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        {{/if}}
+      {{else}}
+        <span class="br-empty">—</span>
+      {{/if}}
+    </div>
+  </section>
+
+  <section class="br-section">
+    <h3 class="br-section-title">{{localize "BR.Sheet.Injuries"}}</h3>
+    <div class="br-chip-list">
+      {{#each injuries}}
+        <span class="br-chip br-chip-injury">
+          {{this.name}} <em>({{this.affects}})</em>
+          {{#if @root.isGM}}
+            <button
+              type="button"
+              data-action="removeInjury"
+              data-index="{{@index}}"
+              data-tooltip="{{localize 'BR.Sheet.RemoveInjury'}}"
+              aria-label="{{localize 'BR.Sheet.RemoveInjury'}}"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          {{/if}}
+        </span>
+      {{else}}
+        <span class="br-empty">—</span>
+      {{/each}}
+    </div>
+  </section>
+
+  <section class="br-section">
+    <h3 class="br-section-title">{{localize "BR.Sheet.Debuffs"}}</h3>
+    <div class="br-chip-list">
+      {{#each debuffs}}
+        <span class="br-chip br-chip-debuff">
+          {{this.name}}
+          <em>({{this.affects}}{{#if this.stuck}}, {{localize "BR.Sheet.DebuffStuck"}}{{/if}})</em>
+          <span class="br-chip-rounds">{{localize "BR.Sheet.DebuffRounds" n=this.rounds}}</span>
+          {{#if @root.isGM}}
+            <button
+              type="button"
+              data-action="removeDebuff"
+              data-index="{{@index}}"
+              data-tooltip="{{localize 'BR.Sheet.RemoveDebuff'}}"
+              aria-label="{{localize 'BR.Sheet.RemoveDebuff'}}"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          {{/if}}
+        </span>
+      {{else}}
+        <span class="br-empty">—</span>
+      {{/each}}
+    </div>
+  </section>
+</div>

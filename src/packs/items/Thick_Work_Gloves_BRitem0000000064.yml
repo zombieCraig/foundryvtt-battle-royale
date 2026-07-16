@@ -1,0 +1,24 @@
+_id: BRitem0000000064
+name: Thick Work Gloves
+type: item
+img: icons/svg/item-bag.svg
+system:
+  rollNumber: 64
+  weapon: false
+  mods:
+    attack: 0
+    move: 0
+    hide: 0
+    search: 0
+    comfort: 0
+    convince: 0
+  multiTarget: false
+  areaAffect: false
+  scoped: false
+  loseOnFailure: false
+  special: Attacker Additional - 1
+effects: []
+folder: null
+sort: 6400
+flags: {}
+_key: '!items!BRitem0000000064'

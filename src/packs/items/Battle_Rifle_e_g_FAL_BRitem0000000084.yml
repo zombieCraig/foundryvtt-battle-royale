@@ -1,0 +1,24 @@
+_id: BRitem0000000084
+name: Battle Rifle (e.g., FAL)
+type: item
+img: icons/svg/sword.svg
+system:
+  rollNumber: 84
+  weapon: true
+  mods:
+    attack: 2
+    move: 0
+    hide: 0
+    search: 0
+    comfort: 0
+    convince: 0
+  multiTarget: false
+  areaAffect: false
+  scoped: false
+  loseOnFailure: false
+  special: ''
+effects: []
+folder: null
+sort: 8400
+flags: {}
+_key: '!items!BRitem0000000084'

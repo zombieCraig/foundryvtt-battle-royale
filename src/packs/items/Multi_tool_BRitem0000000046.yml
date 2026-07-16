@@ -1,0 +1,24 @@
+_id: BRitem0000000046
+name: Multi-tool
+type: item
+img: icons/svg/item-bag.svg
+system:
+  rollNumber: 46
+  weapon: false
+  mods:
+    attack: 0
+    move: 1
+    hide: 0
+    search: 0
+    comfort: 0
+    convince: 0
+  multiTarget: false
+  areaAffect: false
+  scoped: false
+  loseOnFailure: false
+  special: ''
+effects: []
+folder: null
+sort: 4600
+flags: {}
+_key: '!items!BRitem0000000046'

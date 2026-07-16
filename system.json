@@ -1,0 +1,67 @@
+{
+  "id": "battle-royale",
+  "title": "Battle Royale",
+  "description": "A solo RPG overseeing a battle to the death. You are the overseer: up to 52 card-players fight for survival on Hanashima Island.",
+  "version": "0.19.0",
+  "authors": [{ "name": "ZombieCraig" }],
+  "license": "LICENSE.md",
+  "background": "systems/battle-royale/assets/cover.webp",
+  "media": [
+    { "type": "cover", "url": "systems/battle-royale/assets/cover.webp" },
+    { "type": "icon", "url": "systems/battle-royale/assets/icon.webp" }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "esmodules": ["scripts/main.js"],
+  "styles": ["styles/battle-royale.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "player": {}
+    },
+    "Item": {
+      "item": {}
+    }
+  },
+  "packs": [
+    {
+      "name": "macros",
+      "label": "Battle Royale Macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "system": "battle-royale"
+    },
+    {
+      "name": "items",
+      "label": "Battle Royale Items",
+      "path": "packs/items",
+      "type": "Item",
+      "system": "battle-royale"
+    },
+    {
+      "name": "journal",
+      "label": "Battle Royale Rulebook",
+      "path": "packs/journal",
+      "type": "JournalEntry",
+      "system": "battle-royale"
+    }
+  ],
+  "grid": {
+    "distance": 1,
+    "units": ""
+  },
+  "flags": {
+    "dev": {
+      "visibility": "public",
+      "publicRemote": "https://github.com/zombieCraig/foundryvtt-battle-royale.git"
+    }
+  }
+}

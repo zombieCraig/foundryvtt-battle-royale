@@ -1,0 +1,24 @@
+_id: BRitem0000000069
+name: Energy Drink
+type: item
+img: icons/svg/item-bag.svg
+system:
+  rollNumber: 69
+  weapon: false
+  mods:
+    attack: 0
+    move: 1
+    hide: 0
+    search: 0
+    comfort: 0
+    convince: 0
+  multiTarget: false
+  areaAffect: false
+  scoped: false
+  loseOnFailure: false
+  special: ''
+effects: []
+folder: null
+sort: 6900
+flags: {}
+_key: '!items!BRitem0000000069'

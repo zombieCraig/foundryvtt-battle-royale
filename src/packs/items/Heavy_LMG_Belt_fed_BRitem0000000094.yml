@@ -1,0 +1,24 @@
+_id: BRitem0000000094
+name: Heavy LMG (Belt-fed)
+type: item
+img: icons/svg/sword.svg
+system:
+  rollNumber: 94
+  weapon: true
+  mods:
+    attack: 2
+    move: 0
+    hide: 0
+    search: 0
+    comfort: 0
+    convince: 0
+  multiTarget: true
+  areaAffect: false
+  scoped: false
+  loseOnFailure: false
+  special: ''
+effects: []
+folder: null
+sort: 9400
+flags: {}
+_key: '!items!BRitem0000000094'

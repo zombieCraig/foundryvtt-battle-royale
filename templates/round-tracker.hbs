@@ -1,0 +1,64 @@
+<div class="br-tracker">
+  <div class="br-round-number">
+    {{#if started}}{{localize "BR.Rounds.Round" n=round}}{{else}}{{localize "BR.Rounds.NotStarted"}}{{/if}}
+  </div>
+
+  {{#if upNow}}
+    <div class="br-up-now">
+      <img src="{{upNow.img}}" alt="" />
+      <span>
+        {{localize "BR.Rounds.UpNow" name=upNow.name}}
+        {{#if upNow.personality}}<span class="br-personality">({{upNow.personality}})</span>{{/if}}
+        {{#if upNow.weapon}}<span class="br-weapon">⚔ {{upNow.weapon}}</span>{{/if}}
+      </span>
+      {{#if isGM}}
+        <button
+          type="button"
+          class="br-roll-action"
+          data-action="rollAction"
+          data-tooltip="{{localize 'BR.Actions.RollAction'}}"
+          aria-label="{{localize 'BR.Actions.RollAction'}}"
+        >
+          <i class="fa-solid fa-dice"></i>
+        </button>
+      {{/if}}
+    </div>
+  {{/if}}
+
+  {{#if status.length}}
+    <ul class="br-zone-status">
+      {{#each status}}
+        <li class="{{this.kind}}">{{this.text}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+
+  <div class="br-escalation">
+    {{localize "BR.Rounds.Escalation" damage=esc.damage success=esc.success}}
+  </div>
+
+  {{#if isGM}}
+    {{#if started}}
+      <div class="br-tracker-buttons">
+        <button type="button" data-action="nextPlayer" {{#unless canNextPlayer}}disabled{{/unless}}>
+          <i class="fa-solid fa-person-walking-arrow-right"></i> {{localize "BR.Rounds.NextPlayer"}}
+        </button>
+      </div>
+    {{/if}}
+    <div class="br-tracker-buttons">
+      <button type="button" data-action="back" {{#unless canBack}}disabled{{/unless}}>
+        <i class="fa-solid fa-backward-step"></i> {{localize "BR.Rounds.Back"}}
+      </button>
+      <button type="button" data-action="next" {{#unless canNext}}disabled{{/unless}}>
+        <i class="fa-solid fa-forward-step"></i> {{localize "BR.Rounds.Next"}}
+      </button>
+    </div>
+    {{#if finalDay}}
+      <div class="br-tracker-buttons">
+        <button type="button" data-action="finalDay">
+          <i class="fa-solid fa-explosion"></i> {{localize "BR.Endgame.FinalDay"}}
+        </button>
+      </div>
+    {{/if}}
+  {{/if}}
+</div>

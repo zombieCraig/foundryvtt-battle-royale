@@ -1,0 +1,24 @@
+_id: BRitem0000000008
+name: Pipe Wrench
+type: item
+img: icons/svg/sword.svg
+system:
+  rollNumber: 8
+  weapon: true
+  mods:
+    attack: 0
+    move: 0
+    hide: 0
+    search: 0
+    comfort: 0
+    convince: 0
+  multiTarget: false
+  areaAffect: false
+  scoped: false
+  loseOnFailure: false
+  special: ''
+effects: []
+folder: null
+sort: 800
+flags: {}
+_key: '!items!BRitem0000000008'

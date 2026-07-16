@@ -1,0 +1,24 @@
+_id: BRitem0000000050
+name: Flashbang (x1)
+type: item
+img: icons/svg/sword.svg
+system:
+  rollNumber: 50
+  weapon: true
+  mods:
+    attack: 0
+    move: 0
+    hide: 0
+    search: 0
+    comfort: 0
+    convince: 0
+  multiTarget: false
+  areaAffect: true
+  scoped: false
+  loseOnFailure: false
+  special: Actions - 2
+effects: []
+folder: null
+sort: 5000
+flags: {}
+_key: '!items!BRitem0000000050'

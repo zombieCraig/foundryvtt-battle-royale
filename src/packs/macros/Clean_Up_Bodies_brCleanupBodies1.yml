@@ -1,0 +1,13 @@
+_id: brCleanupBodies1
+name: Clean Up Bodies
+type: script
+scope: global
+img: systems/battle-royale/assets/icon.webp
+author: null
+command: |
+  // Remove every dead player's token from the island map (asks first).
+  game.battleroyale.cleanupBodies();
+folder: null
+sort: 0
+flags: {}
+_key: '!macros!brCleanupBodies1'

@@ -1,0 +1,572 @@
+/* Battle Royale system styles */
+
+.battle-royale.player-sheet .br-player {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0.5rem;
+}
+
+/* Hero header: portrait + card face + name, dossier-style */
+
+.battle-royale.player-sheet .br-hero {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.battle-royale.player-sheet .br-hero-portrait {
+  position: relative;
+  flex: 0 0 auto;
+  width: 72px;
+  height: 72px;
+}
+
+.battle-royale.player-sheet .br-hero-img {
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.battle-royale.player-sheet .br-hero-img[data-action="editImage"] {
+  cursor: pointer;
+}
+
+.battle-royale.player-sheet .br-hero-card {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--color-border-dark-tertiary, #7a7971);
+  border-radius: 4px;
+  background: #f2efe6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.battle-royale.player-sheet .br-hero-identity {
+  flex: 1;
+  min-width: 0;
+}
+
+.battle-royale.player-sheet .br-card-name {
+  margin: 0;
+  border: none;
+  font-size: 1.3rem;
+}
+
+.battle-royale.player-sheet .br-hero-sub {
+  display: block;
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+
+/* Status badge row: game-driven state as icon badges rather than checkboxes */
+
+.battle-royale.player-sheet .br-status-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.battle-royale.player-sheet .br-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  border: 2px solid var(--color-border-dark-tertiary, #7a7971);
+  background: #f2efe6;
+  font-size: 1rem;
+  opacity: 0.4;
+  filter: grayscale(1);
+}
+
+.battle-royale.player-sheet label.br-badge {
+  cursor: pointer;
+}
+
+.battle-royale.player-sheet .br-badge input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.battle-royale.player-sheet .br-badge.is-active,
+.battle-royale.player-sheet label.br-badge:has(input:checked) {
+  opacity: 1;
+  filter: none;
+}
+
+.battle-royale.player-sheet .br-badge-dead.is-active,
+.battle-royale.player-sheet label.br-badge-dead:has(input:checked),
+.battle-royale.player-sheet .br-badge-enraged.is-active,
+.battle-royale.player-sheet label.br-badge-enraged:has(input:checked) {
+  border-color: #c00000;
+  box-shadow: 0 0 4px rgba(192, 0, 0, 0.6) inset;
+}
+
+.battle-royale.player-sheet .br-badge-morale.is-active,
+.battle-royale.player-sheet label.br-badge-morale:has(input:checked) {
+  border-color: #18520b;
+  box-shadow: 0 0 4px rgba(24, 82, 11, 0.6) inset;
+}
+
+.battle-royale.player-sheet .br-badge-hidden.is-active,
+.battle-royale.player-sheet label.br-badge-hidden:has(input:checked) {
+  border-color: var(--color-text-dark-primary, #191813);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5) inset;
+}
+
+.battle-royale.player-sheet .br-stat-kills {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.battle-royale.player-sheet .br-stat-icon {
+  opacity: 0.8;
+}
+
+.battle-royale.player-sheet .br-stat-kills input {
+  width: 3em;
+}
+
+/* Sectioned fields */
+
+.battle-royale.player-sheet .br-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--color-border-dark-tertiary, #7a7971);
+}
+
+.battle-royale.player-sheet .br-section-title {
+  margin: 0;
+  border: none;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.battle-royale.player-sheet .br-section-card {
+  opacity: 0.85;
+  font-size: 0.95em;
+}
+
+.battle-royale.player-sheet .form-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.battle-royale.player-sheet .form-group label {
+  flex: 0 0 4.5rem;
+  font-weight: bold;
+}
+
+.battle-royale.player-sheet .form-group input,
+.battle-royale.player-sheet .form-group select {
+  flex: 1;
+}
+
+.battle-royale.player-sheet .form-group input[type="checkbox"] {
+  flex: 0 0 auto;
+}
+
+.battle-royale.player-sheet .br-hint {
+  margin: -0.2rem 0 0 5rem;
+  font-size: 0.8em;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.battle-royale.player-sheet .br-lover-status {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Round tracker widget */
+
+.battle-royale.round-tracker .br-tracker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.battle-royale.round-tracker .br-round-number {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.battle-royale.round-tracker .br-up-now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-weight: bold;
+}
+
+.battle-royale.round-tracker .br-up-now img {
+  width: 28px;
+  height: 28px;
+  border: none;
+}
+
+.battle-royale .br-roll-action {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  line-height: normal;
+  padding: 0;
+}
+
+.battle-royale.round-tracker .br-zone-status {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.battle-royale.round-tracker .br-zone-status .lethal {
+  color: #c00000;
+  font-weight: bold;
+}
+
+.battle-royale.round-tracker .br-zone-status .warning {
+  color: #a07000;
+  font-weight: bold;
+}
+
+.battle-royale.round-tracker .br-zone-status .upcoming {
+  opacity: 0.75;
+  font-size: 0.9em;
+}
+
+.battle-royale.round-tracker .br-escalation {
+  text-align: center;
+  font-weight: bold;
+}
+
+.battle-royale.round-tracker .br-tracker-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.battle-royale.round-tracker .br-tracker-buttons button {
+  flex: 1;
+}
+
+/* Round advance chat card */
+
+.battle-royale.round-advance .lethal {
+  color: #c00000;
+  font-weight: bold;
+}
+
+.battle-royale.round-advance .warning {
+  color: #a07000;
+}
+
+/* Action + success roll chat cards */
+
+.battle-royale.action-card .br-card-header,
+.battle-royale.success-card .br-card-header,
+.battle-royale.combat-card .br-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.battle-royale.action-card .br-card-img,
+.battle-royale.success-card .br-card-img,
+.battle-royale.combat-card .br-card-img {
+  width: 36px;
+  height: 36px;
+  border: none;
+  flex: 0 0 auto;
+}
+
+.battle-royale.action-card h3,
+.battle-royale.success-card h3,
+.battle-royale.combat-card h3 {
+  margin: 0;
+  border: none;
+  font-size: 1.05rem;
+}
+
+.battle-royale .br-location {
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 0 0.35em;
+  border: 1px solid var(--color-border-dark-tertiary, #7a7971);
+  border-radius: 3px;
+}
+
+.battle-royale .br-personality {
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+
+.battle-royale.round-tracker .br-weapon {
+  display: block;
+  font-size: 0.85em;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+.battle-royale.action-card .br-action-body {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.battle-royale.action-card .br-action-body p {
+  margin: 0.1rem 0 0;
+}
+
+.battle-royale.action-card .br-action-icon {
+  width: 40px;
+  height: 40px;
+  border: none;
+  flex: 0 0 auto;
+  /* Icons are black line art on transparency — keep them readable on dark themes. */
+  background: #f2efe6;
+  border-radius: 50%;
+}
+
+.battle-royale.action-card .br-action-note {
+  font-size: 0.9em;
+  font-style: italic;
+  margin: 0.4rem 0 0;
+}
+
+.battle-royale.action-card .br-card-buttons,
+.battle-royale.success-card .br-card-buttons,
+.battle-royale.combat-card .br-card-buttons {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.battle-royale.action-card .br-card-buttons button,
+.battle-royale.success-card .br-card-buttons button,
+.battle-royale.combat-card .br-card-buttons button {
+  flex: 1;
+}
+
+.battle-royale.success-card .success,
+.battle-royale.combat-card .success {
+  color: #18520b;
+  font-weight: bold;
+}
+
+.battle-royale.success-card .failure,
+.battle-royale.combat-card .failure {
+  color: #c00000;
+  font-weight: bold;
+}
+
+/* Combat cards */
+
+.battle-royale.combat-card p {
+  margin: 0.2rem 0;
+}
+
+.battle-royale.combat-card .br-combatant {
+  margin: 0.1rem 0 0.1rem 0.5rem;
+}
+
+.battle-royale.combat-card .br-mods {
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+
+.battle-royale.success-card .br-action-note {
+  font-size: 0.9em;
+  font-style: italic;
+  margin: 0.4rem 0 0;
+}
+
+/* Carried item card on the player sheet */
+
+.battle-royale.player-sheet .br-item-card {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--color-border-dark-tertiary, #7a7971);
+  border-radius: 4px;
+}
+
+.battle-royale.player-sheet .br-item-card img {
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 3px;
+  flex: 0 0 auto;
+}
+
+.battle-royale.player-sheet .br-item-card span {
+  flex: 1;
+}
+
+.battle-royale.player-sheet .br-item-card em {
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+
+.battle-royale.player-sheet .br-item-card button {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  line-height: normal;
+  padding: 0;
+  font-size: 0.8em;
+}
+
+.battle-royale.player-sheet .br-empty {
+  opacity: 0.6;
+}
+
+/* Injuries / debuffs as wrapped chips */
+
+.battle-royale.player-sheet .br-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.battle-royale.player-sheet .br-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.85em;
+}
+
+.battle-royale.player-sheet .br-chip-injury {
+  border: 1px solid #c00000;
+  background: rgba(192, 0, 0, 0.12);
+}
+
+.battle-royale.player-sheet .br-chip-debuff {
+  border: 1px solid #a07000;
+  background: rgba(160, 112, 0, 0.12);
+}
+
+.battle-royale.player-sheet .br-chip em {
+  opacity: 0.8;
+  font-size: 0.95em;
+}
+
+.battle-royale.player-sheet .br-chip-rounds {
+  opacity: 0.75;
+  font-size: 0.9em;
+}
+
+.battle-royale.player-sheet .br-chip button {
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  line-height: normal;
+  padding: 0;
+  font-size: 0.7em;
+}
+
+/* Item sheet */
+
+.battle-royale.item-sheet .br-item-sheet {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.battle-royale.item-sheet .br-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.battle-royale.item-sheet .br-card-img {
+  width: 48px;
+  height: 48px;
+  border: none;
+  flex: 0 0 auto;
+}
+
+.battle-royale.item-sheet .form-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.battle-royale.item-sheet .form-group label {
+  flex: 0 0 6rem;
+  font-weight: bold;
+}
+
+.battle-royale.item-sheet .form-group input {
+  flex: 1;
+}
+
+.battle-royale.item-sheet .form-group input[type="checkbox"] {
+  flex: 0 0 auto;
+}
+
+/* Lover pairing / found chat cards + sheet hint */
+
+.battle-royale.lover-pairs h3 {
+  margin: 0 0 0.3rem;
+  border: none;
+  font-size: 1.05rem;
+}
+
+.battle-royale.lover-pairs p {
+  margin: 0.15rem 0;
+}
+
+.battle-royale.player-sheet .br-lover-dead {
+  flex: 0 0 auto;
+  font-size: 0.85em;
+  opacity: 0.85;
+}
+
+/* Action icon shown in place of the die number in roll breakdowns */
+
+.dice-tooltip .br-action-face {
+  width: 24px;
+  height: 24px;
+  border: none;
+  vertical-align: middle;
+  background: #f2efe6;
+  border-radius: 50%;
+}
+
+/* Combat tracker: turn order is a shuffle — the initiative number is
+   meaningless, hide it. (System CSS only loads in Battle Royale worlds.) */
+
+.combat-tracker .token-initiative {
+  display: none;
+}

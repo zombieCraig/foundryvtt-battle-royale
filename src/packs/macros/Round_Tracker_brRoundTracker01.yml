@@ -1,0 +1,13 @@
+_id: brRoundTracker01
+name: Round Tracker
+type: script
+scope: global
+img: systems/battle-royale/assets/icon.webp
+author: null
+command: |
+  // Open the Battle Royale round tracker widget.
+  game.battleroyale.tracker();
+folder: null
+sort: 0
+flags: {}
+_key: '!macros!brRoundTracker01'

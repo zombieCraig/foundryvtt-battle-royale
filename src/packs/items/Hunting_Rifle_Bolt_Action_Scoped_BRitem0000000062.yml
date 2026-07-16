@@ -1,0 +1,24 @@
+_id: BRitem0000000062
+name: Hunting Rifle (Bolt-Action, Scoped)
+type: item
+img: icons/svg/sword.svg
+system:
+  rollNumber: 62
+  weapon: true
+  mods:
+    attack: 1
+    move: 0
+    hide: 0
+    search: 0
+    comfort: 0
+    convince: 0
+  multiTarget: false
+  areaAffect: false
+  scoped: true
+  loseOnFailure: false
+  special: ''
+effects: []
+folder: null
+sort: 6200
+flags: {}
+_key: '!items!BRitem0000000062'

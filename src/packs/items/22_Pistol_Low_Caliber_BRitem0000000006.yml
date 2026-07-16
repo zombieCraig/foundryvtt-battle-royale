@@ -1,0 +1,24 @@
+_id: BRitem0000000006
+name: .22 Pistol (Low Caliber)
+type: item
+img: icons/svg/sword.svg
+system:
+  rollNumber: 6
+  weapon: true
+  mods:
+    attack: 1
+    move: 0
+    hide: 0
+    search: 0
+    comfort: 0
+    convince: 0
+  multiTarget: false
+  areaAffect: false
+  scoped: false
+  loseOnFailure: false
+  special: ''
+effects: []
+folder: null
+sort: 600
+flags: {}
+_key: '!items!BRitem0000000006'

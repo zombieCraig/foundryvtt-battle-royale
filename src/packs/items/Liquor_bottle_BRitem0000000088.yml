@@ -1,0 +1,24 @@
+_id: BRitem0000000088
+name: Liquor bottle
+type: item
+img: icons/svg/item-bag.svg
+system:
+  rollNumber: 88
+  weapon: false
+  mods:
+    attack: 0
+    move: 0
+    hide: 0
+    search: 0
+    comfort: 1
+    convince: 0
+  multiTarget: false
+  areaAffect: false
+  scoped: false
+  loseOnFailure: false
+  special: ''
+effects: []
+folder: null
+sort: 8800
+flags: {}
+_key: '!items!BRitem0000000088'
