@@ -61,7 +61,8 @@
   "flags": {
     "dev": {
       "visibility": "public",
-      "publicRemote": "https://github.com/zombieCraig/foundryvtt-battle-royale.git"
+      "publicRemote": "https://github.com/zombieCraig/foundryvtt-battle-royale.git",
+      "releaseRepo": "foundryvtt-battle-royale"
     }
   }
 }
